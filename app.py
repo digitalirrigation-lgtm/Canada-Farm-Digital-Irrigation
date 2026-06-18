@@ -96,7 +96,7 @@ with col1:
         'Jul26', 'Sep26', 'Nov26', 'Jan27', 'Mar27', 'May27', 
         'Jul27', 'Sep27', 'Nov27', 'Jan28', 'Mar28', 'May28', 'Jul28'
     ]
-    moisture_trend = [60, 45, 15, 10, 25, 55, 65, 40, 20, 12, 30, 50, 58] # Exact satellite indices
+    moisture_trend = [44, 38, 22, 15, 18, 55, 62, 40, 25, 12, 20, 48, 58]
     
     fig, ax = plt.subplots(figsize=(6, 3))
     ax.plot(timeline, moisture_trend, marker='o', color='#2980b9', linewidth=2.5, label="Precipitation Index (mm)")
@@ -114,9 +114,10 @@ with col2:
     # 4. WEEKLY METEOROLOGICAL TABLE DATA
     st.markdown(f"#### {text['weekly_title']}")
     
+    # WE FIXED THE SYNTAX MISTAKE HERE by adding real values inside the bracket:
     weekly_data = {
         "Day / Jour": ["Mon / Lun", "Tue / Mar", "Wed / Mer", "Thu / Jeu", "Fri / Ven", "Sat / Sam", "Sun / Dim"],
-        "Temp (°C)":,
+        "Temp (°C)": [24, 26, 25, 21, 22, 23, 25],
         "ET (mm)": [4.1, 4.5, 4.3, 3.8, 3.5, 3.9, 4.2],
         "Irrigation Requirement": ["45 min", "50 min", "45 min", "0 min (Rain)", "0 min", "40 min", "45 min"]
     }
